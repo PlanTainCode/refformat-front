@@ -12,7 +12,7 @@ const SectionFour:FC<ISectionFourProps> = () => {
     const [data, setData] = useState<any>();
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    const url = 'http://localhost:1337'
+    const url = 'https://refformatedu-admin.ru'
 
     useEffect(() => {
       const handleResize = () => {

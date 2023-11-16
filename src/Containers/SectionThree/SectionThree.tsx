@@ -18,7 +18,7 @@ const SectionThree:FC<ISectionThreeProps> = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [itemsDesc, setItemsDesc] = useState<any>();
 
-    const url = 'http://localhost:1337'
+    const url = 'https://refformatedu-admin.ru'
 
     useEffect(() => {
       const handleResize = () => {

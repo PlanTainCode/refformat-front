@@ -8,7 +8,7 @@ interface ISectionSevenProps {
 
 const SectionSeven:FC<ISectionSevenProps> = () => {
     const [data, setData] = useState<any>();
-    const url = 'http://localhost:1337'
+    const url = 'https://refformatedu-admin.ru'
 
     const getDataFromBack = async () => {
         const res = await getSeven()

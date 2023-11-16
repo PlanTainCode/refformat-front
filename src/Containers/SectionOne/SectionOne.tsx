@@ -33,7 +33,7 @@ const SectionOne:FC<ISectiononeProps> = ({setOpenPopup}) => {
         getDataFromBack()
     }, [])
 
-    const url = 'http://localhost:1337'
+    const url = 'https://refformatedu-admin.ru'
 
     return (
         <section className='first-section'>

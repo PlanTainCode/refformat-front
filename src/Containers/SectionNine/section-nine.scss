@@ -1,0 +1,44 @@
+.section-nine {
+    width: 100%;
+    background: linear-gradient(95deg, #D4E1E7 0%, rgba(212, 225, 231, 0.00) 132.93%);
+    box-sizing: border-box;
+    padding: 80px 0px;
+    @media (max-width: 540px) {
+        padding: 40px 0px;
+    }
+}
+
+.nine-block {
+    max-width: 1512px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 70px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    @media (max-width: 540px) {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        padding: 0px 10px;
+        max-width: 100%;
+    }
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    a {
+        color: #343640;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @media (max-width: 540px) {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}

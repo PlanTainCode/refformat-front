@@ -1,0 +1,27 @@
+.section-eight {
+    max-width: 1512px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    button {
+        grid-column: 2 span;
+        max-width: fit-content;
+        margin: 90px auto 120px auto;
+    }
+
+    @media (max-width: 540px) {
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        button {
+            margin: 20px auto 40px auto;
+            max-width: 100%;
+        }
+    }
+}

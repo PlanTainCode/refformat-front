@@ -1,0 +1,50 @@
+.seven-block {
+    width: 100%;
+    padding: 120px 0px;
+    max-width: 1520px;
+    margin: 0 auto;
+
+    &__text {
+        width: 100%;
+        max-width: 1520px;
+        z-index: 5;
+        box-sizing: border-box;
+        padding: 0px 0px 0px 90px;
+        display: grid;
+        grid-template-columns: auto auto;
+        span {
+            margin-bottom: -50px;
+            z-index: 10;
+            color: #FFF;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+    }
+
+    img {
+        max-width: 1520px;
+        height: auto;
+        width: 100%;
+    }
+
+    @media (max-width: 540px) {
+        padding: 40px 0px;
+
+        &__text {
+            width: 100%;
+            max-width: 1520px;
+            z-index: 5;
+            box-sizing: border-box;
+            padding: 0px 0px 0px 10px;
+            display: grid;
+            span {
+                margin-bottom: -50px;
+                font-size: 16px;
+            }
+    
+        }
+    }
+}

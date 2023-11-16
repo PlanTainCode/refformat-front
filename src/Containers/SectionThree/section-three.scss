@@ -1,0 +1,154 @@
+.section-three {
+    box-sizing: border-box;
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 120px 40px;
+    @media (max-width: 540px) {
+        padding: 50px 0px;
+    }
+}
+
+.slider-div {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    box-sizing: border-box;
+    padding: 0px  30px;
+    img {
+        border-radius: 40px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 540px) {
+        grid-template-columns: 1fr;
+        padding: 0px 10px;
+
+        img {
+            border-radius: 15px;
+        }
+    }
+}
+
+.skick-dots-custom
+{
+    position: absolute;
+    bottom: -50px;
+    
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0 ;
+
+    list-style: none;
+
+    text-align: center;
+
+    @media (max-width: 540px) {
+        bottom: -30px;
+    }
+}
+.skick-dots-custom li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+    @media (max-width: 540px) {
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+    }
+}
+.skick-dots-custom li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+
+    @media (max-width: 540px) {
+        width: 8px;
+        height: 8px;
+    }
+}
+.skick-dots-custom li button:hover,
+.skick-dots-custom li button:focus
+{
+    outline: none;
+}
+.skick-dots-custom li button:hover:before,
+.skick-dots-custom li button:focus:before
+{
+    opacity: 1;
+}
+.skick-dots-custom li button:before
+{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    content: '';
+    display: block;
+
+    text-align: center;
+    border-radius: 8px;
+    background: #D0D0D0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: 540px) {
+        width: 8px;
+        height: 8px;
+    }
+}
+.skick-dots-custom li.slick-active button:before
+{
+    background: #343640;
+    width: 30px;
+    left: -7px;
+    @media (max-width: 540px) {
+        width: 20px;
+        left: -6px,
+    }
+}
+
+.slider-radius {
+    border-radius: 10px !important;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-box-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}

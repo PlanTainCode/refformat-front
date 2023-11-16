@@ -1,0 +1,132 @@
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-Black.eot');
+    src: local('Apercu Pro Black'), local('ApercuPro-Black'),
+    url('ApercuPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('ApercuPro-Black.woff2') format('woff2'),
+    url('ApercuPro-Black.woff') format('woff'),
+    url('ApercuPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-Bold.eot');
+    src: local('Apercu Pro Bold'), local('ApercuPro-Bold'),
+    url('ApercuPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('ApercuPro-Bold.woff2') format('woff2'),
+    url('ApercuPro-Bold.woff') format('woff'),
+    url('ApercuPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-Medium.eot');
+    src: local('Apercu Pro Medium'), local('ApercuPro-Medium'),
+        url('ApercuPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ApercuPro-Medium.woff2') format('woff2'),
+        url('ApercuPro-Medium.woff') format('woff'),
+        url('ApercuPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-Regular.eot');
+    src: local('Apercu Pro Regular'), local('ApercuPro-Regular'),
+    url('ApercuPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('ApercuPro-Regular.woff2') format('woff2'),
+    url('ApercuPro-Regular.woff') format('woff'),
+    url('ApercuPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-Light.eot');
+    src: local('Apercu Pro Light'), local('ApercuPro-Light'),
+    url('ApercuPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('ApercuPro-Light.woff2') format('woff2'),
+    url('ApercuPro-Light.woff') format('woff'),
+    url('ApercuPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-ExtraLight.eot');
+    src: local('Apercu Pro ExtraLight'), local('ApercuPro-ExtraLight'),
+    url('ApercuPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('ApercuPro-ExtraLight.woff2') format('woff2'),
+    url('ApercuPro-ExtraLight.woff') format('woff'),
+    url('ApercuPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('ApercuPro-Thin.eot');
+    src: local('Apercu Pro Thin'), local('ApercuPro-Thin'),
+    url('ApercuPro-Thin.eot?#iefix') format('embedded-opentype'),
+    url('ApercuPro-Thin.woff2') format('woff2'),
+    url('ApercuPro-Thin.woff') format('woff'),
+    url('ApercuPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Apercu Pro', serif;
+    background: linear-gradient(156deg, #D4E1E7 0%, rgba(212, 225, 231, 0.00) 47.85%), #FFF;
+    @media (max-width: 540px) {
+        background: white;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(156deg, #D4E1E7 0%, rgba(212, 225, 231, 0.00) 47.85%), #FFF;
+    @media (max-width: 540px) {
+        background: white;
+    }
+}
+
+button {
+    box-sizing: border-box;
+    border-radius: 500px;
+    background: #343640;
+    padding: 20px 90px;
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    &:hover {
+        background:#000;
+    }
+
+    @media (max-width: 540px) {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        width: 100%;
+    }
+}
+
+@import './null.scss';

@@ -11,6 +11,7 @@ import SectionEight from "../Containers/SectionEight/SectionEight"
 import SectionNine from "../Containers/SectionNine/SectionNine"
 import Footer from "../Containers/Footer/Footer"
 import Popup from "../Features/Popup/Popup"
+import SectionEleven from "../Containers/SectionEleven/SectionEleven"
 
 
 const Home = () => {
@@ -63,6 +64,7 @@ const Home = () => {
                 />
                 <SectionSeven />
                 <SectionEight setOpenPopup={(data: boolean) => setOpenPopup(data)} />
+                <SectionEleven />
                 <SectionNine />
                 <Footer />
             </div>

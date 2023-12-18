@@ -9,7 +9,7 @@ interface ISectionEightProps {
 
 const SectionEight:FC<ISectionEightProps> = ({setOpenPopup}) => {
     const [data, setData] = useState<any>();
-    const url = 'https://refformatedu-admin.ru'
+    const url = 'http://localhost:1337'
 
     const getDataFromBack = async () => {
         const res = await getEight()
@@ -26,7 +26,7 @@ const SectionEight:FC<ISectionEightProps> = ({setOpenPopup}) => {
                 <h4 style={{fontWeight: 700}}>Стоимость вебинара</h4>
             </div>
             <div className='title-block'>
-                <h4 style={{fontWeight: 500}}>{data?.coast}</h4>
+                <h4 style={{fontWeight: 500}}>{data?.coast} <span style={{fontWeight: 700}}>₽</span></h4>
             </div>
             <div className='title-block'>
                 <h4 style={{fontWeight: 700}}>Дата вебинара</h4>

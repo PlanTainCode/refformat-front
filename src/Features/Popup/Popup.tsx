@@ -64,24 +64,18 @@ const Popup:FC<IPopupProps> = ({openPopup, setOpenPopup}) => {
                 <div className="content">
                     <h3>Оплата вебинара “Виды сплинтов для работы с ВНЧС”</h3>
 
-                    {/* <div className="form">
-                        <div className="input">
-                            <p>Имя</p>
-                            <input type="text" />
-                        </div>
-                        <div className="input">
-                            <p>Телефон</p>
-                            <input type="tel"  />
-                        </div>
-                        <div className="input">
-                            <p>Email</p>
-                            <input type="email" />
-                        </div>
-                    </div> */}
                     <div className="form">
                         <div className="input">
                             <p>Имя</p>
-                            <input type="text" className={errors.name ? 'error' : ''} value={name} onChange={(e) => setName(e.target.value)} onBlur={() => handleBlur('name')} />
+                            <div className="flex-input">
+                                <input type="text" className={errors.name ? 'error' : ''} value={name} onChange={(e) => setName(e.target.value)} onBlur={() => handleBlur('name')} />
+                                {errors.name ? <span></span> : (
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+                                        <path d="M17 1L6 12L1 7" stroke="#019319" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                )}
+                                
+                            </div>
                             {errors.name && <p className="error">{errors.name}</p>}
                         </div>
                         <div className="input">

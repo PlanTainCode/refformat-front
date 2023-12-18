@@ -63,12 +63,14 @@
 .item-five {
 
     p {
+        padding-top: 10px;
         color: #343640;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
         @media (max-width: 540px) {
+            padding-top: 5px;
             font-size: 16px;
             line-height: 16px;
         }
